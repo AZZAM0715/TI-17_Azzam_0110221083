@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CART</title>
+  
+
+  <style>
+    
+    html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(184, 184, 184, 0.747);
+  border-bottom: solid black 2px;
+  padding: 30px;
+  gap: 10px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul.category {
+  gap: 8px;
+}
+
+header nav ul.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+}
+
+main {
+  width: 70%;
+}
+
+main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main table td, main table th {
+  padding: 10px;
+}
+
+main table thead th {
+  text-align: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+main table tbody img {
+  width: 100px;
+}
+
+main table tfoot td {
+  text-align: right;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+aside {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 30%;
+  background-color: burlywood;
+  border-radius: 5px;
+}
+
+aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+aside ul li p {
+  margin: 0;
+}
+
+aside ul li button {
+  width: 100%;
+  padding: 5px 0;
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.24);
+          box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+footer {
+  padding: 30px;
+}
+
+footer nav .layout-atas,
+footer nav .layout-bawah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+footer nav .layout-atas ul {
+  padding: 0;
+  list-style-type: none !important;
+}
+
+footer nav .layout-atas ul.awal {
+  display: inherit;
+}
+
+footer nav .layout-bawah {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav .layout-bawah .icon, footer nav .layout-bawah .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer nav .layout-bawah .icon {
+  gap: 10px;
+}
+
+footer nav .layout-bawah .input input, footer nav .layout-bawah .input p {
+  padding: 5px;
+}
+
+footer nav .layout-bawah .input input {
+  height: 20%;
+}
+
+footer nav .layout-bawah .input p {
+  background-color: turquoise;
+}
+
+    
+  </style>
+</head>
+
+
+<body>
+  <header class="header">
+    <nav class="atas"> 
+      <ul class="awal" style="list-style-type:square;" >
+        <li><b>My Store</b></li>
+      </ul>
+
+      <ul class="category" style="list-style-type: none;">
+        <li class="category1">
+          <a href="#">category1</a> |
+        </li>
+        <li class="category2"> 
+          <a href="#">category2</a> 
+        </li>
+        <li class="category3" >|
+          <a href="#">category3</a>
+        </li>
+      </ul>
+
+      <ul class="icon">
+        <li>
+          <i class="bi bi-search"></i>
+        </li>
+        <li>
+          <i class="bi bi-cart-fill"></i>Cart (1)
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <h1>Firm Store</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <!-- Item -->
+              <img src="https://lh6.googleusercontent.com/proxy/xClH1gnpR5xb5Bj0ECJgFJk20FJp6w5xkFHCuvTUND9VfVQWB8Ca4F5WPmc48vgio8Gtryh7JzahVq4NIhcO2oFfukSDBjxzuDj8G94=w1200-h630-p-k-no-nu" alt="">
+            </td>
+            <td> <!-- Price -->
+              <b>$20.00</b>
+            </td> 
+            <td> <!-- Quantity -->
+              <select>
+                <option value="">1</option>
+                <option value="">2</option>
+              </select>
+            </td> 
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Subtotal: <b>$20.00</b></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <aside>
+      <ul>
+        <li><p>Summary (1 Item)</p></li>
+        <li>
+          <p>Subtotal</p>
+          <p>$20.00</p>
+        </li>
+        <li>
+          <p>Shipping</p>
+          <p>-</p>
+        </li>
+        <li>
+          <p>Est.Taxes</p>
+          <p>-</p>
+          <hr style="width:100%;">
+        </li>
+       
+        <li>
+          <p><b>Total</b></p>
+          <p><b>$20.00</b></p>
+        </li>
+        <li><button>Checkout</button></li>
+      </ul>
+    </aside>
+  </div>
+  
+  <footer> 
+    <nav>
+      <div class="layout-atas">
+        <ul>
+          <li><b>Site Name</b></li>
+        </ul>
+
+        <ul class="awal">
+          <li class="category1">
+            <a href="#">category1</a> |
+          </li>
+          <li class="category2"> 
+            <a href="#">category2</a> 
+          </li>
+          <li class="category3" >|
+            <a href="#">category3</a>
+          </li>
+        </ul>
+
+        <ul style="margin-left: auto;">
+          <li>
+            <a href="">Stay in touch join our newsletter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="layout-bawah">
+        <div class="icon">
+          <i class="bi bi-newspaper"></i>
+          <i class="bi bi-newspaper"></i>
+          <i class="bi bi-newspaper"></i>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Enter Email">
+          <p>Subscribe</p>
+        </div>
+      </div>
+    </nav>
+  </footer>
+</body>
+</html>
