@@ -1,0 +1,57 @@
+body {
+    margin: 10px;
+}
+
+#yellow {
+    background-color: yellow;
+    border: 1px solid black;
+    position: relative;
+    height: 2.5cm;
+    width: 20%;
+    margin: 10px;
+}
+
+#orange {
+    background-color: orangered;
+    border: 1px solid black;
+    position: relative;
+    height: 2.5cm;
+    width: 80%;
+    margin: 10px;
+}
+
+#green {
+    background-color: greenyellow;
+    border: 1px solid black;
+    position: relative;
+    height: 10cm;
+    width: 20%;
+    margin: 10px;
+}
+
+#grey {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    height: 10cm;
+    width: 60%;
+    margin: 10px;
+}
+
+#aqua {
+    background-color: aqua;
+    border: 1px solid black;
+    position: relative;
+    height: 10cm;
+    width: 20%;
+    margin: 10px;
+}
+
+#blue {
+    background-color: blue;
+    border: 1px solid black;
+    position: relative;
+    height: 2.8cm;
+    width: 100%;
+    margin: 10px;
+}
