@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 6.2</title>
+  
+  <style type="text/css">
+    body {
+    display: flex;
+  }
+  
+    .container-flex-kiri,
+    .container-flex-kanan {
+        display: flex;
+      }
+      
+    .container-flex-kanan {
+        flex-direction: column;
+    }
+      
+    nav,
+    header, 
+    article, 
+    aside, 
+    footer {
+        border: 4px solid black;
+    }
+      
+    nav {
+        width: 200px;
+        height: 656px;
+        background-color: pink;
+    }
+      
+    header {
+        width: 698px;
+        height: 70px;
+        background-color: #C12283;
+    }
+      
+    article {
+        width: 490px;
+        height: 500px;
+        background-color: #FFDFDD;
+    }
+      
+    aside {
+        width: 200px;
+        height: 500px;
+        background-color: #F6358A;
+    }
+      
+    footer {
+        width: 698px;
+        height: 70px;
+        background-color: #FC6C85;
+    }
+      
+    .wrapper-article-aside {
+        display: flex;
+    }
+      
+  </style>
+
+</head>
+<body>
+  
+
+  <div class="container-flex-kiri">
+    <nav style="font-size: 50px;  text-align: center; text-align: start;">Nav</nav>
+  </div>
+ 
+  <div class="container-flex-kanan">
+
+    <header style="font-size: 50px;  text-align: center; text-align: start;">Header</header>
+
+    <div class="wrapper-article-aside">
+      <article style="font-size: 50px;  text-align: center; text-align: start;">Article</article>
+      <aside style="font-size: 50px;  text-align: center; text-align: start;">Aside</aside>
+    </div>
+
+    <footer style="font-size: 50px;  text-align: center; text-align: start;">Footer</footer>
+
+  </div>
+
+
+</body>
+</html>
